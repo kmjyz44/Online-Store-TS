@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+  }
+ 
+  .titl{
+    position: absolute;
+    width: 70%;
+    background: #f3f4f5;
+
+  }
+  .titl h1{
+    text-align: center;
+  }
+  .shopping-cart {
+    width: 90%;
+    height: 50%;
+    margin: 30px auto;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+   padding: 10px;
+    
+  }
+  .titleCart{
+display: flex;
+justify-content: center;
+
+  }
+
+.closeCart{
+  font-size: 36px;
+  color: red;
+  position: relative;
+  text-decoration: none;
+  left: 40%;
+}
+     .item {
+    padding: 20px 30px;
+    display: flex; 
+    text-align: center;
+    border: #1f2123;
+    background: white;
+    border-top:  1px solid #a6b4c1;
+    border-bottom:  1px solid #7d90a0;
+    margin-top: 10px;
+  }
+.item .close{
+  position:absolute;
+  text-decoration: none;
+  font-size: 20px;
+  color: red;
+}
+.item_none{
+  display: none;
+}   
+  .buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+  }
+ 
+   
+  @keyframes animate {
+    0%   { background-position: left;  }
+    50%  { background-position: right; }
+    100% { background-position: right; }
+  }
+  
+ 
+
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 100%;
+}
+ 
+.description span {
+  display: block;
+  font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  color: #43484D;
+  font-weight: 400;
+}
+ 
+.description span:first-child {
+  margin-bottom: 5px;
+  font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.quantity {
+    display: flex;
+    padding-top: 20px;
+    margin-right: 60px;
+    align-items: center;
+  }
+  .quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .wrapper{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+  }
+   
+  button[class*=btn] {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background: transparent;
+  
+  }
+  .minus-btn img {
+    margin-bottom: 1px;
+  }
+  .plus-btn img {
+    margin-top: 2px;
+  }
+   
+  button:focus,
+  input:focus {
+    outline:0;
+  }
+  .total-price {
+    width: 20%;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 22px;
+    color: #43484D;
+    font-weight: 300;
+    font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  .endbascet{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+width: 60%;
+text-align: center;
+width: 90%;
+height: 50%;
+margin: 30px auto;
+box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+border-radius: 6px;
+padding: 30px;
+  }
+
+  .endbascet .buyBtn{
+    position: static;
+    height: 60px;
+    width: 260px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 72px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+  }
+  .image {
+    width: 40%;
+  }
+  .image img {
+    width: 40%;
+  }
+
+  .endbascet .buyBtn a{
+    font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
+  .loans a{
+    color: rgb(16, 39, 209);
+    font-size: 22px;
+    text-decoration: none;
+  }
+  .buyCar h1{
+    font-size: 24px;
+    color: #43484D;
+    text-align: center;
+  }
+
+
+  @media (max-width: 800px) {
+    .shopping-cart {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .item {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image img {
+      width: 50%;
+    }
+    .image,
+    .quantity,
+    .description {
+      width: 100%;
+      text-align: center;
+      margin: 6px 0;
+    }
+    .buttons {
+      margin-right: 20px;
+    }
+  }
+                
