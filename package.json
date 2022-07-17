@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "babelrc": "^0.0.7",
+    "jquery": "^3.6.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "save-dev": "0.0.1-security"
@@ -19,6 +20,7 @@
     "@babel/preset-typescript": "^7.16.7",
     "@babel/runtime": "^7.17.2",
     "@types/fork-ts-checker-webpack-plugin": "^0.4.5",
+    "@types/jquery": "^3.5.14",
     "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
     "@types/webpack-dev-server": "^4.7.2",
@@ -32,6 +34,7 @@
     "eslint-webpack-plugin": "^2.7.0",
     "fork-ts-checker-webpack-plugin": "^7.2.12",
     "html-webpack-plugin": "^5.5.0",
+    "ts-migrate": "^0.1.30",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2",
     "webpack": "^5.70.0",

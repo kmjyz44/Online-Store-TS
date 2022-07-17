@@ -32,7 +32,7 @@ const config: Configuration = {
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".tsx", ".ts", ".js","css"],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -42,7 +42,7 @@ const config: Configuration = {
       async: false,
     }),
     new ESLintPlugin({
-      extensions: ["js", "jsx", "ts", "tsx"],
+      extensions: ["js", "jsx", "ts", "tsx","css"],
     }),
     new CleanWebpackPlugin(),
   ],
